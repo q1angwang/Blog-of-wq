@@ -1,2 +1,2 @@
 # my blog archives.
-# thanks Github
+## thanks Github
