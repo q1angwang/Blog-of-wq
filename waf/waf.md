@@ -1,5 +1,10 @@
 #waf
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_page_pv" style="float:right;">
+  Pageviews: <span id="busuanzi_value_page_pv"></span>
+</span><br>
 
 ##安装
 需要yum两个东西，一个是基础支持，一个是官方配置。
