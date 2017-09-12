@@ -5,7 +5,7 @@
 </script>
 <span id="busuanzi_container_page_pv" style="float:right;">
   Pageviews: <span id="busuanzi_value_page_pv"></span>
-</span>
+</span><br>
 
 ## 1. markdown简介
 Markdown 是一种轻量级标记语言，它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档
