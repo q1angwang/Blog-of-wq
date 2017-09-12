@@ -3,8 +3,8 @@
 
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<span id="busuanzi_container_page_pv">
-  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+<span id="busuanzi_container_page_pv" style="text-align:right;">
+  Pageviews:<span id="busuanzi_value_page_pv"></span>
 </span>
 
 ## 1. markdown简介
