@@ -1,6 +1,6 @@
 # Markdown 参考
 
-<i>Last Updated: 2017-8-1</i>  
+<i style="color:grey">Last Updated: 2017-8-1</i>  
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_page_pv" style="float:right;">
   Page views: <span id="busuanzi_value_page_pv"></span>
@@ -47,7 +47,7 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
 \_xxx\_           _下划线_
 
-\`xxx\`           `变成红色的块强调 / 一般代码块`
+\`xxx\`           `变成块强调 / 一般の代码块`
 
 \~~aaa\~~	~~删除线~~
 
@@ -55,10 +55,10 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 >   引用
 
 
-\```python  
-from PIL import Image  
-\```
-代码块高亮显示：``` / 直接空Tab
+\`\`\`python  
+from PIL import Image   
+\`\`\`
+代码块高亮显示：\`\`\` / 直接空Tab
 
 ```C
 #include<stdio.h>
@@ -70,34 +70,32 @@ from PIL import Image
 [链接名称]\(http://链接网址)：[xx](http://xxx.com)  
 
 网址链接：  
-<\http://xxx.com>： <http://xxx.com>
+\<http://xxx.com\>： <http://xxx.com>
 
 图片：  
 \![xxx]\(url)：![xxx](xxx.jpg/png/gif) 
 
 
 ### 4. 列表 表格
-\* xxx 
-* 无序列表
+\-/\* xxx 
+- 无序列表
 
 \1.xxx:     
 1. 有序列表 	
 
-//[Tab]可以创造二级序列
+- [Tab]可以创造二级序列
 
-\---  
-三个以上的短线 即可作出分割线
+\-\-\-  
+三个以上的短线，即可作出分割线
 
 
 
 #### 表格：
-|Table|'s|demo|
-| --- |---| --- |
-| 1| test1| $16 |
-| 2| c1       | $12 |
-| 3| d1       |   $1 |
-
-<br>
+|Table|'s    |demo|
+| --- |-----| --- |
+| 1     | test1| $16 |
+| 2     | c1       | $12 |
+| 3     | d1       |   $1 |
 
 
 #### LaTeX 公式：  
@@ -109,14 +107,13 @@ $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
 $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$  
-<br>
 
 
 #### Task List：
 
 - [x] HTML
 - [x] CSS
-- [ ] JavaScript
+- [  ] JavaScript
 
 ### 5. Tips
 
@@ -132,7 +129,7 @@ Markdown 转换为 HTML  之后，可以通过浏览器 打开它。选择 '打�
 段首缩进这件事，应该是 CSS 或其他排版工具的事情，Markdown 奉行的是样式和内容分开的哲学。我们需要一个干净些的排版。
 
 #### 限制图片大小并居中
-```<div align=center><img src="image/1.jpg" width="200" height="200"/></div>```
+```<div align=center><img src="image/1.jpg" width="200" height="200"/></div>```    
 <div align=center><img src="image/1.jpg" width="400" /></div>
 
 #### 目录

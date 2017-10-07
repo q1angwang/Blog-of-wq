@@ -1,6 +1,6 @@
 # xxx-
 
-<i>Last Updated: 2017-10-7</i>  
+<i style="color:grey">Last Updated: 2017-10-7</i>  
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_page_pv" style="float:right;">
   Page views: <span id="busuanzi_value_page_pv"></span>
