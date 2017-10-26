@@ -1,4 +1,4 @@
-# Dell-15-7559-win7重装问题
+# Dell-win7重装问题
 
 <i style="color:grey">Last Updated: 2017-8-15</i>  
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -6,6 +6,7 @@
   Page views: <span id="busuanzi_value_page_pv"></span>
 </span><br>
 
+* 硬件环境：Dell-15-7559
 
 ## 创建系统盘
 ### 1. 装系统就两个点：系统装载 + 系统引导
@@ -26,14 +27,14 @@ Create bootable USB drives the easy way。开源软件就是爽。
 使用场景：利用可引导的ISO格式的镜像（Windows，Linux，UEFI等）创建成USB安装盘。  
 
 使用：
-<div align=center><img src="image/Dell-Win7-Reshipment-yufus.jpg" width="200" /></div>
+<div align="center"><img src="image/Dell-Win7-Reshipment-yufus.jpg" width="200" /></div>
 
 ---
 
 
 
 ### Q1:安装WIN7时提示“缺少所需的CD/DVD驱动器设备驱动程序”：
-<div align=center><img src="image/Dell-Win7-Reshipment-lackOfdrive.jpg" width="600" /></div>
+<div align="center"><img src="image/Dell-Win7-Reshipment-lackOfdrive.jpg" width="600" /></div>
 <br><br>
 1. 重新插拔U盘，或者更换其他USB接口。可能存在USB3.0对win7驱动的兼容性问题，把U盘插到2.0口上试试。
 
@@ -41,7 +42,7 @@ Create bootable USB drives the easy way。开源软件就是爽。
 但如果系统识别了你的U盘，还是出现缺少驱动的提示，可能是制作的启动盘存在问题。重新制作U盘(更换电脑做/换个镜像)。
 
 3. 某些主板在 BIOS 里改 ACHI 到 IDE 模式即可安装 ，如果不行，改回 ACHI 尝试方法3。  
-<div align=center><img src="image/Dell-Win7-Reshipment-bios.jpg" width="300" /></div><安装时未截图，图转网络>
+<div align="center"><img src="image/Dell-Win7-Reshipment-bios.jpg" width="300" /></div><安装时未截图，图转网络>
 
 4. 识别分区问题，尝试命令提示符/工具重新分区。
 
