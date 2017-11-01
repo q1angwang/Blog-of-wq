@@ -21,9 +21,9 @@
 
     打开mod_security的配置文件：$ cd /etc/httpd/
     
-    不知道目录情况，tree 一下当前目录![tree]([image/waf1_tree.jpg)  
+    不知道目录情况，tree 一下当前目录![tree](image/waf1_tree.jpg)  
 
-    /etc/httpd/conf.d 下面的 mod_security.conf 是总的配置文件，控制开关、基础变量、！include ../modsecurity.d/activated_rules ![dir](image/waf1_！dir.jpg)
+    /etc/httpd/conf.d 下面的 mod_security.conf 是总的配置文件，控制开关、基础变量、！include ../modsecurity.d/activated_rules ![dir](image/waf1_dir.jpg)
 
     把conf.d/mod_security.conf 最后三行 include 的 # activated_rules 注释掉，注意留下来的那两个。
 
@@ -32,7 +32,7 @@
 
     自己在 /etc/httpd/modsecutiry.d/local_rules 下面建一个规则。
     语法有错的话重启 apache 会报错，跟这报错看就好。(然后不断回滚，看哪一步修改使错误发生)
-    ![syntax](iamge/syntax.jpg)
+    ![syntax](iamge/waf1_syntax.jpg)
 
     配置好后，自己加的那行：![test1](image/waf1_test1.jpg)
     > test.data：sqlmmap
