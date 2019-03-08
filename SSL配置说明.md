@@ -38,33 +38,33 @@
 0. 打开Apache/conf/httpd.conf，找到以下参数进行配置并保存
 
 
-```shell
-#LoadModule ssl_module modules/mod_ssl.so   
-#删除行首的配置语句注释符号“#”加载mod_ssl.so模块启用SSL服务，Apache默认是不启用该模块的。如果找不到该配置，请重新编译mod_ssl模块。
-#Include conf/extra/httpd-ssl.conf   删除行首的配置语句注释符号“#”。
-```
+
+
+    `#LoadModule ssl_module modules/mod_ssl.so `    
+    `#删除行首的配置语句注释符号“#”加载mod_ssl.so模块启用SSL服务，Apache默认是不启用该模块的。如果找不到该配置，请重新编译mod_ssl模块。`  
+    `Include conf/extra/httpd-ssl.conf   删除行首的配置语句注释符号“#”。`
+
+
 
 1. 打开服务器上的Apache/conf/extra/httpd-ssl.conf配置文件，找到以下参数配置后保存。
 
-```
-    SSLProtocol all -SSLv2 -SSLv3    
-    SSLCipherSuite HIGH:!RC4:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!EXP:+MEDIUM    
-    SSLHonorCipherOrder on
-    SSLCertificateFile cert/domain name_public.crt    
-    SSLCertificateKeyFile cert/domain name.key    
-    SSLCertificateChainFile cert/domain name_chain.crt   
-```
+
+    `SSLProtocol all -SSLv2 -SSLv3    `
+    `SSLCipherSuite HIGH:!RC4:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!EXP:+MEDIUM  `  
+    `SSLHonorCipherOrder on`
+    `SSLCertificateFile cert/domain name_public.crt  `  
+    `SSLCertificateKeyFile cert/domain name.key`    
+    `SSLCertificateChainFile cert/domain name_chain.crt `  
+ 
 
 
 2. 重启Apache服务器使SSL配置生效。
 
-命令如下：  
+    命令如下：  
 
-```  
-    $ /usr/local/apache2/bin/apachectl restart apaceh
-```
+    `$ /usr/local/apache2/bin/apachectl restart apaceh`
 
-3. 测试https://yourdomain.com
+3. 测试 https://yourdomain.com
 
 
 <br>
