@@ -62,7 +62,7 @@
 
     命令如下：  
 
-    `$ /usr/local/apache2/bin/apachectl restart apaceh`
+    `$ /usr/local/apache2/bin/apachectl restart apache`
 
 3. 测试 https://yourdomain.com
 
@@ -71,6 +71,6 @@
 
 > 本文作者： 强王  
 > 本文标题： SSL配置说明  
-> 发布时间： 2019年3月8日 - 23时58分  
+> 发布时间： CST - 2019/3/8 - 23:58  
 > 版权声明： 本文由 强王 原创，采用 保留署名-非商业性使用-禁止演绎 4.0-国际许可协议   
 > 转载请保留以上声明信息！  
