@@ -152,7 +152,7 @@ A: 去项目下，添加新文件，以`License.txt`或 `License.md`命名。
 
     `$ git add .`
     //$ git add --all #(-A) #将删除文件操作也加到stages中
-    //`git add .`只能stages新文件和被修改文件，没有被删除文件
+    ~~//`git add .`只能stages新文件和被修改文件，没有被删除文件~~
     `$ git commit -m'first commit'`
     //需要把改动commit进版本库再push
 
