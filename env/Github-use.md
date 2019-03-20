@@ -34,7 +34,8 @@
 
 默认不敏感，下面的操作需要在终端切到任意git仓库下操作。
 
-    $ git config --global core.ignorecase false
+    ~~$ git config --global core.ignorecase false~~
+    $ git config core.ignorecase false
 
 完事后`.gitconfig`文件内容显示：
 
@@ -51,6 +52,23 @@
 否则项目文件夹/文件命名不规范，整理后重新 clone 下来后就会发现，之前将所有文件名首字母改成大写的改动全部没变。
 
 非常影响效率，之前的整理又得重新做一遍。
+
+
+
+在团队使用Git的时候，尤其是多人合作的项目，经常会出现一个问题，就是由于同一个文件名大小写不一致导致无法合并的问题。
+
+那我们应该怎么来解决呢?
+
+可以使用`git rm –cached`将冲突的文件从Git仓库的缓存中删除，然后改名后再加入到git中
+
+git rm --cached <filename>
+mv <old_filename> <new_filename>
+git add <new_filename>
+git commit -m 'rename <new_filename>' <new_filename>
+
+当然，为了一劳永逸，我们可以让团队成员都更改配置git的大小写敏感，避免某些windows用户继续制造这样的问题。
+
+git config core.ignorecase false
 
 
 
