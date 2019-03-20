@@ -6,13 +6,20 @@
   Page views: <span id="busuanzi_value_page_pv"></span>
 </span><br>
 
+
+
+
+
 **to modify:**
 1. xxx-*2  
 2. img src  
-3. 发布  + Last Updated
+3. 发布+Last Updated 自动化
 
 ## 小标题1
+<div align=center><img src="image/xxx-.jpg" width="200"/></div>
 
+
+## 图片适应页面  
 <div align=center><img src="image/xxx-.jpg" width="200"/></div>
 
 
