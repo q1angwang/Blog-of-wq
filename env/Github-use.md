@@ -23,6 +23,9 @@
 
 
 
+
+
+
 ## 更新仓库
 
 1. 选择一个仓库的`clone with ssh`，eg：
@@ -31,7 +34,12 @@
 
 2. 操作本地仓库：
     $ git add .
+    //$ git add --all #(-A) #将删除文件操作也加到stages中
+    //`git add .`只能stages新文件和被修改文件，没有被删除文件
     $ git commit -m'first commit'
+
+[建议]：每次add后，再使用`git status`确认新操作stage了
+
 
 
 3. 把本地仓库推送到远程仓库 ：
@@ -47,10 +55,57 @@
 
 
 
+
+
+
+
+# 设置全局大小写敏感
+默认不敏感
+
+    $ git config --global core.ignorecase false
+
+完事后`.gitconfig`文件内容显示：
+
+    [core]
+        quotepath = false
+        ignorecase = false
+    [user]
+        name = q1angwang
+        email = qiangwanghhh@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 删除文件操作(git仓库中)
+
+$ rm test.txt
+$ git rm test.txt
+$ git commit -m "remove test.txt"
+$ git add all #可提交未跟踪、修改和删除文件。
+$ git add .可以提交未跟踪和修改文件，但是不处理删除文件。
+
+
+
+
+
+
+
+
 # Issue pushing new code in Github
 
 
-# Q1：
+## Q1：
 ➜  Notes git:(master) git push origin master
 To github.com:q1angwang/Notes.git
  ! [rejected]        master -> master (fetch first)
@@ -71,7 +126,7 @@ BEWARE: Using force can change the history for other folks on the same project. 
 
 
 
-# Q2:
+## Q2:
 ➜  Notes git:(master) git push origin master
 To github.com:q1angwang/Notes.git
 ! [rejected]     master -> master (non-fast-forward) 
@@ -98,7 +153,53 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 
 
-# Q3:为什么Github没有记录你的Contributions
+
+
+
+# branch have diverged
+## Q：
+
+    $ git status
+    On branch master
+    Your branch and 'origin/master' have diverged,
+    and have 22 and 23 different commits each, respectively.
+      (use "git pull" to merge the remote branch into yours)
+
+    nothing to commit, working tree clean
+
+    WQ@DESKTOP-3BGM28T MINGW64 ~/Documents/CloudFile/Work/Notes/2019Course (master)
+    $ git merge origin/master
+    fatal: refusing to merge
+
+## 解决1：
+
+    git merge master --allow-unrelated-histories
+
+## 解决2：
+
+    $ git rebase origin/master 
+    $ git pull --rebase 
+    $ git push origin master 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 为什么Github没有记录你的Contributions
 
 解决方法来源：
 http://xunli.xyz/2016/01/09/github-not-count/
@@ -124,13 +225,3 @@ https://help.github.com/en/articles/why-are-my-contributions-not-showing-up-on-m
 ## 完成后需设置本地git配置
 git config --global user.email "565603068@qq.com"
 git config --global user.name "q1angwang"
-
-
-
-
-
-
-
-
-
-
