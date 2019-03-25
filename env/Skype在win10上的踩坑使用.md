@@ -39,7 +39,10 @@
 ## 换用baidu下载的安装包解决了
 
 官网2 <http://skype.gmw.cn/down/>  
-可以直接得到安装包，正常登陆正常通话正常视频。
+可以直接得到安装包，正常登陆正常通话正常视频。  
+谢[skyel1u](http://skyel1u.github.io)师傅
+
+
 
 
 
