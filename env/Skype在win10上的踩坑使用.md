@@ -50,3 +50,5 @@
 - Windows叫Microsoft store，你说AppStore别人会误解你所在的平台。
 
 - 紧急(建立)联系可以通过<https://web.skype.com>网页版获得服务，网页版无法语音视频。
+
+- 借着使用了Microsoft store，学习下UWP应用的概念<>。
