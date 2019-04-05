@@ -21,6 +21,13 @@
 是个典型的问题
 ![](skype-for-business-need-organization1.png)
 
+解决：
+
+    请问你是使用自己的微软账号登录，还是用公司提供的 Office 365 账号登录？
+
+    如果用的是微软账号，那么只能登录 Skype，是无法登录 Skype for Business 的。
+
+
 
 
 
