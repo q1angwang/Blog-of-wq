@@ -1,0 +1,4 @@
+https://emacs.dev
+https://vim.dev
+github搜vimrc就完事了
+vim是越熟悉之后配置文件越短(
