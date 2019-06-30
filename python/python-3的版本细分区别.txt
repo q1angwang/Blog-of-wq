@@ -1,0 +1,1 @@
+python3.4 byte类型没有hex方法
